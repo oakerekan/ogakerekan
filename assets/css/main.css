@@ -132,12 +132,12 @@ input, select, textarea {
 	h2.typewriter{
 		color: #fff;
 		font-family: 'Source Sans Pro';
-		overflow: hidden;
-		border-right: .15em solid black;
-		white-space: nowrap;
+		overflow: visible;
+		border-right: .15em solid;
+		white-space: normal;
 		margin: 0 auto;
 		letter-spacing: .10em;
-		animation: typing 3.5s steps(30, end) both, blink-caret .5s both;
+		animation: typing 1.5s steps(30, end) both, blink-caret .5s both;
 		animation-delay: calc(var(--delay, 0) * 1s), calc(var(--delay, 0) * 1s + 3.5s);
 	  }
 	  
@@ -155,8 +155,7 @@ input, select, textarea {
 		to {
 		  border-color: transparent
 		}
-		50% {
-		  border-color: black
+		100% {
 		}
 	  }
 
