@@ -133,11 +133,11 @@ input, select, textarea {
 		color: #fff;
 		font-family: 'Source Sans Pro';
 		overflow: hidden;
-		border-right: .15em solid;
+		border-right: .10em solid;
 		white-space: nowrap;
 		margin: 0 auto;
-		letter-spacing: .10em;
-		animation: typing 5s steps(30, end) both, blink-caret .5s both;
+		letter-spacing: .17em;
+		animation: typing 3.5s steps(30, end) both, blink-caret .5s step-end infinite;
 		animation-delay: calc(var(--delay, 0) * 1s), calc(var(--delay, 0) * 1s + 3.5s);
 	  }
 	  
@@ -150,12 +150,13 @@ input, select, textarea {
 		}
 	  }
 	  
-	  @keyframes blink-caret {
+		@keyframes blink-caret {
 		from,
 		to {
 		  border-color: transparent
 		}
-		100% {
+		50% {
+		  border-color: transparent;
 		}
 	  }
 
