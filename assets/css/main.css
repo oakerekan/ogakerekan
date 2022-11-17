@@ -132,11 +132,12 @@ input, select, textarea {
 	h2.typewriter{
 		color: #fff;
 		font-family: 'Source Sans Pro';
+		font-size: 16pt;
 		overflow: hidden;
 		border-right: .10em solid;
 		white-space: nowrap;
 		margin: 0 auto;
-		letter-spacing: .17em;
+		letter-spacing: .08em;
 		animation: typing 3.5s steps(30, end) both, blink-caret .5s step-end infinite;
 		animation-delay: calc(var(--delay, 0) * 1s), calc(var(--delay, 0) * 1s + 3.5s);
 	  }
