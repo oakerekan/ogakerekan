@@ -132,7 +132,7 @@ input, select, textarea {
 	h2.typewriter{
 		color: #fff;
 		font-family: 'Source Sans Pro';
-		font-size: 16pt;
+		font-size: 20pt;
 		overflow: hidden;
 		border-right: .10em solid;
 		white-space: nowrap;
