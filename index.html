@@ -324,6 +324,36 @@
             </div>
         </div>
     </section>
+<style>
+    --Map SECTION--
+        /* Set the size of the div element that contains the map */
+
+        #map {
+            height: 300px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+            background-color: grey;
+            opacity: 1
+        }
+    </style>
+    <!-- center: { lat: 7.450780, lng: 3.899710 } -->
+
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+        var mymap = L.map('map').setView([7.450780, 3.899710], 3);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoiaG9sdHp5YW4iLCJhIjoiY2tmczBrd3BrMGJodDJ0bXQ5aW9sZXJ6eCJ9.8zTEkfZ54u4TvDGNjNh-Cg'
+        }).addTo(mymap);
+        var marker = L.marker([7.450780, 3.899710]).addTo(mymap);
+    </script>
+
 
     <section id="contact">
         <div class="container">
